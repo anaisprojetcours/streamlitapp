@@ -15,12 +15,12 @@ import streamlit as st
 #import plotly.express as px 
 
 #Map 
-#from folium.plugins import StripePattern
+from folium.plugins import StripePattern
 #import geopandas as gpd
 
 #Web app map 
 from streamlit_folium import st_folium
-#import folium
+import folium
 #from folium.plugins import MarkerCluster
 
 
@@ -137,3 +137,5 @@ for (index, row) in df[mask].iterrows():
 
 
 st_data = st_folium(m, width = 725)
+
+print(pd.__version__)
