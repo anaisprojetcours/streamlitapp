@@ -12,7 +12,7 @@ import numpy as np
 import streamlit as st 
 
 #Plot thing 
-import plotly.express as px 
+#import plotly.express as px 
 
 #Map 
 from folium.plugins import StripePattern
