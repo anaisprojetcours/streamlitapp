@@ -15,13 +15,13 @@ import streamlit as st
 #import plotly.express as px 
 
 #Map 
-from folium.plugins import StripePattern
-import geopandas as gpd
+#from folium.plugins import StripePattern
+#import geopandas as gpd
 
 #Web app map 
 from streamlit_folium import st_folium
-import folium
-from folium.plugins import MarkerCluster
+#import folium
+#from folium.plugins import MarkerCluster
 
 
 ######################################################################################################
