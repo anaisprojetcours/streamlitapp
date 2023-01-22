@@ -29,7 +29,7 @@ import folium
 #############################################Data base################################################
 
 ######School
-data_school= pd.read_csv("/Users/anaisdias/Desktop/dataetablissement.csv", sep=";")
+data_school= pd.read_csv("./assets/dataetablissement.csv", sep=";")
 school = data_school.copy()
 #Drop unuseful columns
 school = school.drop(['patronyme_uai','lieu_dit_uai','boite_postale_uai','coordonnee_x','coordonnee_y','localisation','position','appellation_officielle','localite_acheminement_uai','libelle_commune','code_commune'], axis=1)
@@ -38,13 +38,13 @@ school = school.rename(columns={'numero_uai':'UAI'})
 
 #####IPS
 #Indice sur la position sociale des parents
-data_ips = pd.read_csv("/Users/anaisdias/Desktop/ips.csv", sep=";")
+data_ips = pd.read_csv("./assets/ips.csv", sep=";")
 ips= data_ips.copy()
 
 
 ######Pollution
 #Indice de pollution
-data_pollution = pd.read_csv("/Users/anaisdias/Desktop/yy.csv", sep=",", encoding = 'utf8')
+data_pollution = pd.read_csv("./assets/yy.csv", sep=",", encoding = 'utf8')
 pollution = data_pollution.copy()
 #rename UAI
 pollution = pollution.rename(columns={'ID':'UAI'})
@@ -54,11 +54,11 @@ pollution = pollution.dropna(axis=0)
 
 
 #####Sector
-data_sector= pd.read_csv("/Users/anaisdias/Desktop/secteurs.csv", sep=";")
+data_sector= pd.read_csv("./assets/secteurs.csv", sep=";")
 sector = data_sector.copy()
 
 #####Nb_student
-data_student= pd.read_csv("/Users/anaisdias/Desktop/nbeleves.csv", sep=";")
+data_student= pd.read_csv("./assets/nbeleves.csv", sep=";")
 nbstudent= data_student.copy()
 #keep on insteressting columns
 nbstudent= nbstudent[['numero_ecole','nombre_total_classes','nombre_eleves_elementaire_hors_ulis', 'nombre_eleves_ulis',
@@ -138,4 +138,5 @@ for (index, row) in df[mask].iterrows():
 
 st_data = st_folium(m, width = 725)
 
-print(pd.__version__)
+
+
