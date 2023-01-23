@@ -6,7 +6,7 @@ st.subheader("Plusieurs options sont possibles! ")
 
 ###Create a contact form
 contact_form= """"
-<form action="https://formsubmit.co/anaisprojetcours@email.com" method="POST">
+<form action="https://formsubmit.co/anaisprojetcours@gmail.com" method="POST">
      <input type="text" name="name" required>
      <input type="email" name="email" required>
      <button type="submit">Send</button>
