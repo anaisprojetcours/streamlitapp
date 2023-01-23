@@ -1,7 +1,7 @@
 import streamlit as st 
 
 st.title("Vous souhaitez nous contacter? ")
-st.subheader("Plusieurs options sont possibles!😄 ")
+st.subheader("Remplissez le formulaire ci-dessous😄 ")
 
 
 ###Create a contact fo
