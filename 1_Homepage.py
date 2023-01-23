@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon=":)"
 )
 
-st.title("P")
+st.title("Bienvenue dans l'application S'cool ")
 st.sidebar.success("select a page above")
 
-st.subheader('If you struggling to find a great school for your child, you are at the right place! ')
+st.subheader('Ici vous trouverez la bonne école pour vos enfants facilement.')
